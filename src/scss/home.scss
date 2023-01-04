@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     position: relative;
 
-    &::after{
+    &::before{
         content:'';
         position: absolute;
         width: 100%;
@@ -33,6 +33,11 @@
         font-weight: 700;
         letter-spacing: 0em;
         margin-bottom: rem(25);
+
+        @media (max-width:$mobile){
+            font-size: rem(22);
+            line-height: math.div(34, 22); 
+        }
     }
 
     &__value {
@@ -43,6 +48,11 @@
         font-weight: 600;
         letter-spacing: 0em;
         margin-bottom: rem(39);
+
+        @media (max-width:$mobile){
+            font-size: rem(48);
+            line-height: math.div(62, 48); 
+        }
     }
 
     &__discont {}
@@ -75,6 +85,11 @@
         line-height: math.div(96, 64);
         font-weight: 700;
         letter-spacing: 0em;
+
+        @media (max-width:$mobile){
+            font-size: rem(56);
+            line-height: math.div(88, 56); 
+        }
     }
 
     &__value {
@@ -85,9 +100,14 @@
         line-height: math.div(48, 32);
         font-weight: 700;
         letter-spacing: 0em;
+
+        @media (max-width:$mobile){
+            font-size: rem(28);
+            line-height: math.div(44, 28); 
+        }
     }
 
-    &__content {
+    &__text {
         max-width: rem(324);
         color: $whiteColor;
         font-family: $fontFamily;        
@@ -95,6 +115,17 @@
         line-height: math.div(54, 36);
         font-weight: 600;
         letter-spacing: 0em;
+
+        @media (max-width:$mobile){
+            font-size: rem(30);
+            line-height: math.div(48, 30); 
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: rem(5);
+            }
+        }
     }
 }
 
