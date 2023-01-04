@@ -1,0 +1,29 @@
+
+.page {
+
+    &__main {}
+    &__categories {}
+    &__locations {}
+    &__delivery {}
+    &__team {}
+    &__app {}
+    &__partners {}
+}
+
+.label {
+    color: $accentColor;
+    font-family: $fontFamily;
+    font-size: rem(18);
+    line-height: math.div(27,18);
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+.value {
+    color: $mainColor;
+    font-family: $fontFamily;
+    font-size: rem(55);
+    line-height: math.div(83, 55);
+    font-weight: 600;
+    letter-spacing: 0em;
+}
